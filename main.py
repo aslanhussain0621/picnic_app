@@ -1,5 +1,5 @@
 import flet as ft
-import flet_fastapi
+import flet.fastapi as flet_fastapi
 import requests
 import json
 import os
@@ -158,4 +158,5 @@ def main(page: ft.Page):
 
 if __name__ == "__main__": 
     app = flet_fastapi.app(main)
+
 
