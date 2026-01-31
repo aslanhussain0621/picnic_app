@@ -1,4 +1,2 @@
-flet[fastapi]==0.25.0
-flet-fastapi
+flet==0.25.0
 requests
-uvicorn
