@@ -1,5 +1,4 @@
 import flet as ft
-import flet.fastapi as flet_fastapi
 import requests
 import json
 import os
@@ -156,7 +155,11 @@ def main(page: ft.Page):
     render_list()
     update_stats()
 
-if __name__ == "__main__": 
-    app = flet_fastapi.app(main)
+if __name__ == "__main__":
+    import os
+    # Render একটি PORT এনভায়রনমেন্ট ভ্যারিয়েবল দেয়, সেটি গ্রহণ করছি
+    port = int(os.getenv("PORT", 8000))
+    ft.app(target=main, view=None, port=port, host="0.0.0.0")
+
 
 
