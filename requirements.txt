@@ -1,4 +1,4 @@
 flet==0.25.0
-flet-fastapi==0.25.0
+flet-fastapi
 requests
 uvicorn
